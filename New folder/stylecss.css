@@ -1,0 +1,75 @@
+h1
+{
+	color:red;
+}
+h4
+{
+	color:purple;
+}
+li
+{
+    color:lightslategray;	
+}
+
+h1
+{
+	color:#86D660;
+}
+h4
+{
+	color:rgb(255,13,222);
+
+}
+h4
+{
+	color:rgba(255,13,222,0.3);
+}
+body
+{
+background:pink;
+}
+
+h4
+{
+	background:lightslategray;
+	border:5px solid blue; 
+
+}
+body
+{
+	background:url(http://media1.santabanta.com/full5/Nature/Universe/universe-72a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#special
+{
+	color:green;
+}
+.same
+{
+	text-decoration:line-through;
+}
+p
+{
+background:yellow;
+}
+
+*
+{
+	border:red solid;
+}
+
+h4 +ul
+{
+	background:yellow
+}
+
+li a
+{
+	background:green;
+}
+
+li:nth-of-type(3)
+{
+	background:purple;
+}

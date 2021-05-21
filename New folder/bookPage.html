@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BookStack - Gallery</title>
+
+<!-- stylesheets and js -->
+<link rel="stylesheet" type="text/css" href="bookPage.css">
+
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<script type="text/javascript" src="bookPage.js"></script>
+</head>
+
+<body>
+	<!-- top-navbar -->
+	<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+		<div class="col text-left brand ml-3">
+			<h2>
+				<a href="bookStack.html" class="navbar-brand"> <img
+					src="images/ic1.JPG" class="brand"> BookStack
+				</a>
+			</h2>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navigationItems">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navigationItems">
+			<ul class="nav navbar-nav ml-auto mt-1">
+				<form action="bookStack.html" method="POST">
+					<div class="from-group input-group">
+						<input type="text" class="form-control" required
+							placeholder="Search book" style="border-radius: 20px;" size="30">
+						<div class="input-group-append">
+							<button class="btn" type="submit" id="bookSearch"
+								onclick="this.blur()"
+								style="margin-left: -44px; z-index: 3; margin-top: -3px; outline:;">
+								<img src="https://img.icons8.com/material/26/000000/search.png"
+									height="25px">
+							</button>
+						</div>
+					</div>
+				</form>
+			</ul>
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item dropdown mr-3"><a
+					class="nav-link dropdown-toggle" href="" id="userDropdown"
+					role="button" data-toggle="dropdown"><strong> Hello,
+							Dhirendra </strong></a> <em>
+						<div class="dropdown-menu" aria-labelledby="userDropdown">
+							<a class="dropdown-item" href="">Your Account</a> <a
+								class="dropdown-item" href="">Your Orders</a> <a
+								class="dropdown-item" href="">Your Wishist</a> <a
+								class="dropdown-item" href="">Notifications</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="">Become a Seller</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="login.html">Switch Account</a> <a
+								class="dropdown-item" href="login.html">Sign Out</a>
+						</div>
+				</em></li>
+				<li class="nav-item mr-5"><a href="" class="nav-link"> <img
+						src="images/cart.JPG" height="20px"><em><strong>
+								Cart </strong></em>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<!-- front -->
+	<div>
+		<h1 class="text-center mt-5">Welcome to BookStack!!</h1>
+		<p class="text-center">Finally you are here!!. You can get all the
+			books that you need:)</p>
+		<!-- <img src="images/E:Required/i.jpg" style="width: 700px;height: 200px;margin-left: 300px"> -->
+	</div>
+	<div class="m-5">
+		<!-- book grid -->
+		<div class="book-grid">
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b1.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b2.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b3.jfif" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b4.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b5.jfif" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b6.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b7.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b8.png" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b9.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b10.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b11.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b12.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b13.jpg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b14.jpeg" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b15.png" class="books">
+				</div>
+			</div>
+
+			<div class="book-list text-center mt-3 mb-3">
+				<div class="book-title">
+					<a href="details.html" class="btn btn-primary mr-3"> View </a> <a
+						href="buy.html" class="btn btn-primary mr-3">Buy</a> <a
+						href="rent.html" class="btn btn-primary"> Rent </a>
+				</div>
+				<div class="book-image">
+					<img src="images/b16.jpg" class="books">
+				</div>
+			</div>
+		</div>
+
+		<!-- page navigation -->
+		<div class="mt-5">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled"><a class="page-link" href=""
+					tabindex="-1" aria-disabled="true">Previous</a></li>
+				<li class="page-item"><a class="page-link" href="">1</a></li>
+				<li class="page-item"><a class="page-link" href="">2</a></li>
+				<li class="page-item disabled"><a class="page-link" href="">.</a></li>
+				<li class="page-item disabled"><a class="page-link" href="">.</a></li>
+				<li class="page-item"><a class="page-link" href="">3</a></li>
+				<li class="page-item"><a class="page-link" href="">Next</a></li>
+			</ul>
+		</div>
+		<a onclick="topFunction()" id="myBtn" class="btn btn-warning"
+			title="Go to top"><img src="images/up.png" style="height: 25px;"></a>
+
+	</div>
+
+
+	<!-- footer -->
+	<nav
+		class="navbar sticky-bottom navbar-expand-md navbar-light bg-light">
+		<div class="col brand mb-5">
+			<img src="images/ic1.JPG" class="brand"><font size="5"><strong>
+					BookStack</strong></font><br> <span style="margin-left: 60px"><font
+				size="1">© Copyright 2019</font></span>
+		</div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#footerItems">
+			<span
+				class="navbar-toggler-icon text-right float-right position-relative"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="footerItems"
+			style="margin-right: -10px">
+
+			<!-- links -->
+			<div class="col" style="margin-bottom: -10px">
+				<ul class="list-unstyled">
+					<li class="mb-2">About</li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li><a href="aboutUs.html">About Us</a></li>
+					<li><a href="#">Recents Releases</a></li>
+					<li><a href="#">Terms and Conditions</a></li>
+				</ul>
+			</div>
+
+			<!-- social -->
+			<div class="col" style="margin-bottom: -10px;">
+
+				<ul class="list-unstyled">
+					<li class="mb-2">Social</li>
+					<li><a href="#"> <!-- <img src="images/twitter.jpg" class="icon mr-3"> -->Twitter
+					</a></li>
+					<li><a href="#"> <!-- <img src="images/fb.jpg" class="icon mr-3"> -->Facebook
+					</a></li>
+					<li><a href="#"> <!-- <img src="images/insta.jpg" class="icon mr-3"> -->Instagram
+					</a></li>
+					<li><a href="#"> <!-- <img src="images/gp.jpg" class="icon mr-3"> -->Google
+							Plus
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</body>
+</html>

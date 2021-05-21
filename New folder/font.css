@@ -1,0 +1,43 @@
+p
+{
+	font-family:"50 Arial";
+}
+h1
+{
+	font-family: 'Indie Flower', cursive;
+}
+span
+{
+	font-size:2.0em;
+}
+
+p
+{
+	font-weight:bold;
+}
+p
+{
+	line-height:1.2;
+}
+p
+{
+	text-decoration:underline;
+}
+h1
+{
+	text-decoration:line-through;
+}
+
+p
+{
+	text-align:centre;
+}
+p1
+{
+	
+	width:50%;
+    border:5px solid blue;
+
+    padding:20px; 
+margin:20px;
+}

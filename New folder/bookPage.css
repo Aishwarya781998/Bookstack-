@@ -1,0 +1,89 @@
+h1,h2{ color: purple;}
+
+.formInput{ margin-bottom: 10px;}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width:400px;
+    text-align: center;
+}
+.image{
+    height: 100px;
+    width: 100px;
+}
+.brand{
+    margin-top: -4px;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+#myBtn {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 15px; 
+    margin-bottom: 75px;
+}
+#myBtn:hover {
+    background-color: red;
+}
+
+.books{
+    height: 320px;
+    width: 250px;
+    /*padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+.book-grid {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  	grid-gap: 1em;
+}
+.book-list {
+  	position: relative;
+}
+.book-image {
+  	line-height: 0;
+  	overflow: hidden;
+}
+.book-image img {
+  	transition: filter .3s ease-out;
+}
+.book-title {
+	z-index: 1;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: opacity .5s;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.book-list:hover .book-title {
+  	opacity: 1;
+}
+.book-list:hover .book-image img {
+  	filter: blur(20px);
+}
+
+/* for touch screen devices */
+@media (hover: none) { 
+    .book-title {
+        opacity: 1;
+    }
+    .book-image img {
+        filter: blur(2px);
+}
